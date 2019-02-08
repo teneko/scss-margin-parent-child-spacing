@@ -1,0 +1,28 @@
+{
+  "name": "scss-margin-parent-child-spacing",
+  "version": "0.0.0",
+  "description": "This module provides css classes that cover margin spacing for a parent and their children.",
+  "main": "src/index.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teroneko/scss-margin-parent-child-spacing.git"
+  },
+  "keywords": [
+    "cisisi",
+    "sass",
+    "scss",
+    "margin",
+    "spacing",
+    "parent",
+    "child"
+  ],
+  "author": "teroneko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/teroneko/scss-margin-parent-child-spacing/issues"
+  },
+  "homepage": "https://github.com/teroneko/scss-margin-parent-child-spacing#readme"
+}

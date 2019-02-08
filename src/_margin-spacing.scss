@@ -1,0 +1,11 @@
+@import "utilities";
+
+$margin-parent-child-spacing : 0.25rem !default;
+
+.mpcs-mt {
+    @include inner-space(margin,top, $margin-parent-child-spacing);
+}
+
+.mpcs-ml {
+    @include inner-space(margin,left, $margin-parent-child-spacing);
+}

@@ -1,0 +1,33 @@
+@mixin inline-space($space_type, $dir, $space, $negative) {
+    @if $negative==true {
+        $space: -$space;
+    }
+
+    #{$space_type}-#{$dir}: $space;
+}
+
+@mixin outer-space($dir, $space) {
+        & {
+        @include inline-space(margin, $dir, $space, true);
+    }
+}
+
+@mixin inner-space($inner_space_type, $dir, $space) {
+        & {
+        @include inline-space(margin, $dir, $space, true);
+
+        & > *:not([class~="display: none;"]) {
+            @include inline-space($inner_space_type, $dir, $space, false);
+        }
+    }
+}
+
+@function get-first-letter($word) {
+    @return str-slice($word, 0, 1);
+}
+
+@function get-class-name($space_type, $dir) {
+    $space_type_short: get-first-letter($space_type);
+    $dir_short: get-first-letter($dir);
+    @return #{$space_type_short}#{$dir_short};
+}
