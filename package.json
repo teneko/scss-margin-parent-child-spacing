@@ -4,7 +4,9 @@
   "description": "This module provides css classes that cover margin spacing for a parent and their children.",
   "main": "src/index.scss",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node-sass src/ -o dist/",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -24,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/teroneko/scss-margin-parent-child-spacing/issues"
   },
-  "homepage": "https://github.com/teroneko/scss-margin-parent-child-spacing#readme"
+  "homepage": "https://github.com/teroneko/scss-margin-parent-child-spacing#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
 }
