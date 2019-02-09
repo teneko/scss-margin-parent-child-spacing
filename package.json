@@ -1,6 +1,6 @@
 {
   "name": "scss-margin-parent-child-spacing",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "This module provides css classes that cover margin spacing for a parent and their children.",
   "main": "src/index.scss",
   "scripts": {
